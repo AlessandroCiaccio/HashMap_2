@@ -7,9 +7,8 @@ public class Main {
                 "Dog", "Labrador",
                 "Hamster", "Syrian"
         );
-        Set<String> values = new HashSet<>(animals.values());
-        List<String> sortedValues=new ArrayList<>(values);
-        sortedValues.sort(Comparator.naturalOrder());
+        List<String> sortedValues=new ArrayList<>(animals.values());
+        Collections.sort(sortedValues);
         System.out.println(sortedValues);
 
     }
